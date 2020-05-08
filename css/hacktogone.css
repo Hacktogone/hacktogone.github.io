@@ -1,0 +1,93 @@
+body{
+    background-color: black;
+}
+
+
+#logo{
+    height: 40vh;
+    max-width: 100vw;
+}
+
+
+.octagonWrap {
+    width:130px;
+    height:130px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2em;
+}
+
+.octagon {
+    position: absolute;
+    overflow: hidden;
+    transform: rotate(45deg);
+    border-left: 10px solid red;
+    border-right: 10px solid red;
+    border-top: 10px solid maroon;
+    border-bottom: 10px solid maroon;
+
+}
+
+.octagon:before {
+    position: absolute;
+    /* There needs to be a negative value here to cancel
+     * out the width of the border. It's currently -3px,
+     * but if the border were 5px, then it'd be -5px.
+     */
+    top: -10px; right: -10px; bottom: -10px; left: -10px;
+    transform: rotate(45deg);
+    content: '';
+    border: inherit;
+}
+
+.octagonInner{
+    filter: grayscale(100%);
+    transform: rotate(-45deg);
+}
+
+.octagonInner img{
+    width: 100%;
+}
+
+.white{
+    color: white;
+}
+
+.htg-red{
+    color: maroon;
+}
+.bg-htg-red-darken{
+    background-color: #550303;
+}
+
+.htg-red-darken{
+    color: #550303;
+}
+
+.float-left{
+    float: left;
+}
+
+
+.grey_octagon {
+    border-left: 10px solid #7c7c7c;
+    border-right: 10px solid #7c7c7c;
+    border-top: 10px solid #3d3d3d;
+    border-bottom: 10px solid #3d3d3d;
+}
+
+ul.nav li a, ul.nav li a:visited {
+    color: white !important;
+}
+
+ul.nav li a:hover, ul.nav li a:active {
+    color: white !important;
+}
+
+ul.nav li.active a {
+    color: white !important;
+}
+
+a {
+     color: white !important;
+}
