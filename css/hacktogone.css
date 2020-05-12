@@ -91,3 +91,20 @@ ul.nav li.active a {
 a {
      color: white !important;
 }
+
+
+article{
+    background-color: #1f2429;
+    border-radius: 5px;
+    border-left: white 3em;
+
+    color: white;
+    padding: 2em;
+
+    margin-bottom: 2em;
+}
+
+
+article > footer > a, #articles > article > p > a{
+    color: red !important;
+}
